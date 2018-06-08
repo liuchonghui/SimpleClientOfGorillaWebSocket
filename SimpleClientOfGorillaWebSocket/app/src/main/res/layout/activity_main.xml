@@ -18,7 +18,7 @@
             android:id="@+id/note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="「NOTE」This is a test with different scheme launch different activities" />
+            android:text="「NOTE」This is a test with an WebSocketProtocolServer(rfc4655)" />
 
         <LinearLayout
             android:id="@+id/card1"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/splash1"
                 android:background="#77ff99"
-                android:text="Run on console and launch 「StartActivity」:" />
+                android:text="Connect to WebSocketServer" />
 
             <LinearLayout
                 android:id="@+id/launch1"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#607799ff"
-                    android:text="adb shell am start -a android.intent.action.VIEW -d usfg://urlscheme/start -e android.intent.extra.TEXT T01022184"
+                    android:text=""
                     android:textColor="#ff4500" />
 
                 <Button
@@ -64,7 +64,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33"
-                    android:text="copy" />
+                    android:text="CONNECT" />
             </LinearLayout>
         </LinearLayout>
 
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/splash2"
                 android:background="#77ff99"
-                android:text="Run on console and launch 「SettingActivity」:" />
+                android:text="Send message to WebSocketServer" />
 
             <LinearLayout
                 android:id="@+id/launch2"
@@ -104,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#607799ff"
-                    android:text="adb shell am start -a android.intent.action.VIEW -d usfg://urlscheme/setting -e android.intent.extra.TEXT T01022185"
+                    android:text=""
                     android:textColor="#ff4500" />
 
                 <Button
@@ -112,7 +112,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33"
-                    android:text="copy" />
+                    android:text="SEND'hello'" />
             </LinearLayout>
         </LinearLayout>
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/splash3"
                 android:background="#77ff99"
-                android:text="Run on console and launch 「APIActivity」:" />
+                android:text="Disconnect WebSocketServer" />
 
             <LinearLayout
                 android:id="@+id/launch3"
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#607799ff"
-                    android:text="adb shell am start -a android.intent.action.VIEW -d usfg://urlscheme/api -e android.intent.extra.TEXT T01022186"
+                    android:text=""
                     android:textColor="#ff4500" />
 
                 <Button
@@ -160,7 +160,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33"
-                    android:text="copy" />
+                    android:text="DISCONNECT" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
